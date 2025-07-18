@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiselcore Voxel Editor</title>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.6/dist/XP.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "MS Sans Serif", sans-serif;
+            font-size: 11px;
+            background: #c0c0c0;
+            overflow: hidden;
+        }
+        
+        button {
+            font-family: "MS Sans Serif", sans-serif !important;
+            font-size: 11px !important;
+            padding: 1px 4px !important;
+            border: 1px outset #c0c0c0 !important;
+            background: #c0c0c0 !important;
+            cursor: default !important;
+        }
+        
+        button:hover {
+            background: #dfdfdf !important;
+        }
+        
+        button:active {
+            border: 1px inset #c0c0c0 !important;
+            background: #c0c0c0 !important;
+        }
+        
+        button.default {
+            border: 2px outset #c0c0c0 !important;
+            font-weight: bold !important;
+        }
+        
+        .toolbar {
+            background: #c0c0c0;
+            border-bottom: 1px solid #808080;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+        }
+        
+        .status-bar {
+            background: #c0c0c0;
+            border-top: 1px solid #808080;
+            padding: 2px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            height: 20px;
+        }
+        
+        .sunken-panel {
+            border: 2px inset #c0c0c0;
+        }
+        
+        .field-row {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .field-row label {
+            font-size: 11px;
+        }
+        
+        .field-row input, .field-row select {
+            font-family: "MS Sans Serif", sans-serif;
+            font-size: 11px;
+            padding: 1px;
+            border: 1px inset #c0c0c0;
+        }
+        
+        #root {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html> 
